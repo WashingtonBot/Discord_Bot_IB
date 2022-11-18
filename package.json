@@ -7,9 +7,9 @@
   "node": "16.9.0",
   "npm": "7.20.3"
 },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+   "scripts": {
+    "start": "node ."
+   },
   "author": "",
   "license": "ISC",
   "dependencies": {
