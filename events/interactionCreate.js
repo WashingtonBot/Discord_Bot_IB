@@ -40,7 +40,7 @@ module.exports = {
 		interaction.guild.channels.create({
             name: `『📚』・ ${interaction.user.tag}`,
 			type: ChannelType.GuildText,
-			parent: '868490606639464469',
+			parent: '929117315990159431',
             permissionOverwrites: [
                 {
                     id: interaction.guild.id,
@@ -48,16 +48,11 @@ module.exports = {
 
 
                  },
-				 {
-                    id: '870681612260634674' ,
-                    allow: [PermissionFlagsBits.ViewChannel],
 
-					
-                 },
-				 {
+		 {
                     id: interaction.user.id ,
                     allow: [PermissionFlagsBits.ViewChannel],
-					deny: [PermissionFlagsBits.SendMessages]
+		    deny: [PermissionFlagsBits.SendMessages]
 
 					
                  },
@@ -118,7 +113,7 @@ module.exports = {
 			.setTitle('Ticket Close')
 			.setDescription(`Ticket closed by ${interaction.user}`)
 			.setColor('Green')
-		const channel1 = interaction.guild.channels.cache.get('868490606639464470')
+		const channel1 = interaction.guild.channels.cache.get('1012476565776506992')
 		channel1.send({ embeds: [embed1] })
 
 	} else if (interaction.customId === 'solve') {
@@ -131,7 +126,7 @@ module.exports = {
 			.setTitle('Ticket Solved')
 			.setDescription(`Ticket solved by ${interaction.user}`)
 			.setColor('Green')
-		const channel1 = interaction.guild.channels.cache.get('868490606639464470')
+		const channel1 = interaction.guild.channels.cache.get('1012476565776506992')
 		channel1.send({ embeds: [embed1] })
 	}
 
