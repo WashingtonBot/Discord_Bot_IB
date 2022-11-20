@@ -23,7 +23,7 @@ module.exports = {
 		interaction.guild.channels.create({
             name: `『📚』・${name}`,
 			type: ChannelType.GuildVoice,
-			parent: '868490606639464469',
+			parent: '929117315990159431',
 			userLimit: amount,
             permissionOverwrites: [
                 {
